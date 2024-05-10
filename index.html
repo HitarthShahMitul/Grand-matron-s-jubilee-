@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Birthday Wish for Grandma</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+    }
+    .container {
+        text-align: center;
+        padding-top: 100px;
+    }
+    h1 {
+        color: #4CAF50;
+        font-size: 40px;
+        text-transform: uppercase;
+    }
+    p {
+        color: #333;
+        font-size: 24px;
+    }
+    #popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        background: #fff;
+        border: 2px solid #4CAF50;
+        border-radius: 10px;
+        z-index: 9999;
+    }
+    #popup p {
+        font-size: 18px;
+    }
+    #closeBtn {
+        cursor: pointer;
+        color: #4CAF50;
+        font-size: 20px;
+        position: absolute;
+        top: 5px;
+        right: 10px;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Happy Birthday, Grandma!</h1>
+    <p>Esteemed Granny, may your birthday be adorned with celestial grace.</p>
+    <button onclick="showPopup()">Click to see surprise</button>
+</div>
+
+<div id="popup">
+    <span id="closeBtn" onclick="closePopup()">&times;</span>
+    <p><b><i>Dear Grandma,</i></b></p>
+    <p><i>On this most felicitous of days, I extend my heartfelt felicitations to you, revered grandmother, may your journey through the tapestry of time be adorned with the jewels of joy, serenity, and boundless love, as your presence continues to imbue our lives with timeless wisdom and profound grace.</i></p>
+</div>
+
+<script>
+    function showPopup() {
+        document.getElementById("popup").style.display = "block";
+    }
+
+    function closePopup() {
+        document.getElementById("popup").style.display = "none";
+    }
+</script>
+</body>
+</html>
